@@ -1,0 +1,28 @@
+### 멤버 정보(팀 포함)
+GET localhost:8080/members
+
+### 팀 정보 조회
+GET http://localhost:8080/team
+
+### 팀 정보 추가
+POST localhost:8080/team
+Content-Type: application/json
+
+{
+  "name": "유벤투스"
+}
+### 팀 정보 수정
+POST localhost:8080/team/5
+Content-Type: application/json
+
+{
+  "name": "PSG"
+}
+
+###
+POST localhost:8080/team/5/members
+Content-Type: application/json
+
+{
+  "name": "이강인"
+}
