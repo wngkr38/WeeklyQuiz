@@ -7,8 +7,5 @@ import java.util.List;
 
 @Repository
 public interface MemberRepository extends JpaRepository<Member,Long> {
-    List<Member> findByNameLike(String name);
-
-
     List<Member> findByNameContaining(String name);
 }

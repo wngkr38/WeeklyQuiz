@@ -33,8 +33,7 @@ public class TeamController {
     @PostMapping("/team/{team_id}")
     public Team updateTeam(@RequestBody Team team, @PathVariable Long team_id) {
         return teamService.updateTeam(team, team_id);
-
-
+        
     }
 
 }

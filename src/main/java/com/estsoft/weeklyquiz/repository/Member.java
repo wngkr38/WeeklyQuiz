@@ -28,5 +28,4 @@ public class Member {
     @JoinColumn(name = "team_id")
     @JsonIgnore
     private Team team;
-
 }

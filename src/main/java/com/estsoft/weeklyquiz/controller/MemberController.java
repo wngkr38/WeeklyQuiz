@@ -52,9 +52,4 @@ public class MemberController {
         return new MemberDTO(memberService.addMember(teamId, member));
     }
 
-
-    @GetMapping("/hi")
-    public String htmlPage() {
-        return "hi";
-    }
 }

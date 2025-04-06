@@ -14,5 +14,4 @@ public class MemberDTO {
         this.name = member.getName();
         this.team = new TeamDTO(member.getTeam());
     }
-
 }

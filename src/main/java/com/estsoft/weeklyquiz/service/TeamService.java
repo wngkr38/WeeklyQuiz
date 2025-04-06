@@ -32,5 +32,6 @@ public class TeamService {
         return teamRepository.findById(team_id)
                 .orElseThrow(() -> new IllegalArgumentException("Team not found with ID: " + team_id));
     }
+
 }
 

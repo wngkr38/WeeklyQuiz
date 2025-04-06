@@ -36,7 +36,6 @@ public class MemberService {
         return memberRepository.findByNameContaining(name);
 
     }
-
     public Member addMember(Long teamId, Member member) {
         Team team = teamService.findById(teamId);
         member.setTeam(team);

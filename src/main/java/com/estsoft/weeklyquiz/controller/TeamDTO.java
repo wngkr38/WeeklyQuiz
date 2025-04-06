@@ -12,4 +12,5 @@ public class TeamDTO {
         id = team.getId();
         name = team.getName();
     }
+
 }
