@@ -14,6 +14,7 @@ public class CommentResponseDto {
     private LocalDateTime createdAt;
     private ArticleDTO article;
 
+
     public CommentResponseDto(Comment comment) {
         this.commentId = comment.getCommentId();
         this.articleId = comment.getArticle().getArticleId();

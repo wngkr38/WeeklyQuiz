@@ -11,4 +11,5 @@ public class CommentPostContent {
     private String name;
     private String email;
     private String body;
+
 }

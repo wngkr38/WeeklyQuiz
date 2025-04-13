@@ -48,5 +48,4 @@ public class CommentController {
         List<CommentResponseDto> comments = commentService.AllComments(articleId);
         return ResponseEntity.ok(comments);
     }
-
 }

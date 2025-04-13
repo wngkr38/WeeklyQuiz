@@ -10,4 +10,5 @@ public class ArticlePostContent {
     private Long id;
     private String title;
     private String body;
+
 }

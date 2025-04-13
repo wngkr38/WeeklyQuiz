@@ -24,15 +24,17 @@ public class ExternalService {
         this.articleRepository = articleRepository;
         this.commentRepository = commentRepository;
     }
-    public void getArticles(){
+
+    public void getArticles() {
         String url = "https://jsonplaceholder.typicode.com/posts";
 
         RestTemplate restTemplate = new RestTemplate();
 
         ResponseEntity<List<ArticlePostContent>> response =
-                restTemplate.exchange(url, HttpMethod.GET, null, new ParameterizedTypeReference<>() {});
+                restTemplate.exchange(url, HttpMethod.GET, null, new ParameterizedTypeReference<>() {
+                });
 
-        if(response.getBody() != null){
+        if (response.getBody() != null) {
             List<ArticlePostContent> articlePostContents = response.getBody();
 
             for (ArticlePostContent articlePostContent : articlePostContents) {
@@ -45,12 +47,14 @@ public class ExternalService {
         }
 
     }
-    public void getComments(){
+
+    public void getComments() {
         String url = "https://jsonplaceholder.typicode.com/comments";
 
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<List<CommentPostContent>> response =
-                restTemplate.exchange(url, HttpMethod.GET, null, new ParameterizedTypeReference<>() {});
+                restTemplate.exchange(url, HttpMethod.GET, null, new ParameterizedTypeReference<>() {
+                });
 
         if (response.getBody() != null) {
             List<CommentPostContent> commentPostContents = response.getBody();

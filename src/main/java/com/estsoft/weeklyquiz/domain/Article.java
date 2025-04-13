@@ -21,7 +21,7 @@ import java.util.List;
 public class Article {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="article_id",updatable = false)
+    @Column(name = "article_id", updatable = false)
     private Long articleId;
 
     @Column(nullable = false)
@@ -38,6 +38,5 @@ public class Article {
 
     @OneToMany(mappedBy = "article")
     private List<Comment> comments = new ArrayList<>();
-
 
 }

@@ -41,7 +41,6 @@ public class CommentService {
         comment.setBody(request.getBody());
         return comment;
     }
-
     public void deleteComment(Long commentId) {
         commentRepository.deleteById(commentId);
     }

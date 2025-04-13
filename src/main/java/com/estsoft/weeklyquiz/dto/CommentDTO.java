@@ -18,4 +18,5 @@ public class CommentDTO {
         this.body = comment.getBody();
         this.createdAt = comment.getCreatedAt();
     }
+
 }

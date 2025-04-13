@@ -24,4 +24,5 @@ public class ExternalApiController {
         externalService.getComments();
         return ResponseEntity.ok().build();
     }
+
 }

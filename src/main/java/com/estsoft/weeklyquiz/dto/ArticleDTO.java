@@ -13,6 +13,7 @@ public class ArticleDTO {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
+
     public ArticleDTO(Article article) {
         this.articleId = article.getArticleId();
         this.title = article.getTitle();
